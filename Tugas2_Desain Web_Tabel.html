@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tabel Jadwal Kuliah</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        th {
+            background-color: #34495e;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .hari {
+            background-color: #3498db;
+            color: white;
+            vertical-align: middle;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .jam {
+            background-color: #f9f9f9;
+            color: #34495e;
+            font-weight: bold;
+        }
+        .matkul {
+            background-color: #ecf0f1;
+            font-weight: 500;
+        }
+        .dosen {
+            background-color: #f5f5f5;
+        }
+        .ruang {
+            background-color: #e8f8f5;
+            color: #16a085;
+            font-weight: bold;
+        }
+        .footer {
+            background-color: #e74c3c;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            padding: 12px;
+            letter-spacing: 1px;
+        }
+        tr:hover td:not(.hari):not(.footer) {
+            background-color: #f0f7fc;
+        }
+        .senin .matkul { border-left: 4px solid #3498db; }
+        .selasa .matkul { border-left: 4px solid #2ecc71; }
+        .rabu .matkul { border-left: 4px solid #f1c40f; }
+        .kamis .matkul { border-left: 4px solid #9b59b6; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <th>HARI</th>
+                <th>JAM</th>
+                <th>MATA KULIAH</th>
+                <th>DOSEN</th>
+                <th>RUANG</th>
+            </tr>
+            <tr class="senin">
+                <td class="hari" rowspan="2">SENIN</td>
+                <td class="jam">08.00 - 10.00</td>
+                <td class="matkul">Kajian Islam</td>
+                <td class="dosen">Ust. Anwar Nashidin, Lc.</td>
+                <td class="ruang">Ruang Teori</td>
+            </tr>
+            <tr class="senin">
+                <td class="jam">10.00 - 12.00</td>
+                <td class="matkul">Aplikasi Perkantoran</td>
+                <td class="dosen">Drs. MGS Hendri, M.M</td>
+                <td class="ruang" rowspan="5">Ruang I</td>
+            </tr>
+            <tr class="selasa">
+                <td class="hari" rowspan="2" style="background-color: #2ecc71;">SELASA</td>
+                <td class="jam">08.00 - 10.00</td>
+                <td class="matkul">Linux Fundamental</td>
+                <td class="dosen">Henry Saptono, S.Si,M.kom</td>
+            </tr>
+            <tr class="selasa">
+                <td class="jam">10.00 - 12.00</td>
+                <td class="matkul">Html, Css & Javascript</td>
+                <td class="dosen" rowspan="3">Sirojul Munir, S.Si, M.Kom</td>
+            </tr>
+            <tr class="rabu">
+                <td class="hari" rowspan="2" style="background-color: #f1c40f; color: #333;">RABU</td>
+                <td class="jam">08.00 - 10.00</td>
+                <td class="matkul">Basis Data</td>
+            </tr>
+            <tr class="rabu">
+                <td class="jam">10.00 - 12.00</td>
+                <td class="matkul">Algoritma dan Pemograman</td>
+            </tr>
+            <tr class="kamis">
+                <td class="hari" rowspan="2" style="background-color: #9b59b6;">KAMIS</td>
+                <td class="jam">08.00 - 10.00</td>
+                <td class="matkul">Kewirausahaan & Pengembangan Diri</td>
+                <td class="dosen">Khoirul Umam, S.Pd</td>
+                <td class="ruang" rowspan="2">Ruang Teori</td>
+            </tr>
+            <tr class="kamis">
+                <td class="jam">10.00 - 12.00</td>
+                <td class="matkul">Bahasa Inggris</td>
+                <td class="dosen">Drs. Mahfudz</td>
+            </tr>
+            <tr>
+                <td class="footer" colspan="5">JADWAL DAPAT BERUBAH SEWAKTU-WAKTU</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

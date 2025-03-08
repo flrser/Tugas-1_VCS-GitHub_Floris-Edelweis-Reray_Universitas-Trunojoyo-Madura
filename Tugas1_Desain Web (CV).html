@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Biodata Pribadi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .header h2 {
+            font-weight: 300;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .left-column {
+            flex: 1;
+            padding: 30px;
+            background-color: #f9f9f9;
+            min-width: 300px;
+        }
+        
+        .right-column {
+            flex: 2;
+            padding: 30px;
+            min-width: 300px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 1.3rem;
+            color: #2c3e50;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+        
+        .item {
+            margin-bottom: 15px;
+        }
+        
+        .item-title {
+            font-weight: bold;
+            display: block;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .skill-item {
+            margin-bottom: 10px;
+        }
+        
+        .skill-name {
+            display: inline-block;
+            width: 140px;
+        }
+        
+        .progress-bar {
+            width: 70%;
+            height: 8px;
+            background: #ecf0f1;
+            display: inline-block;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .progress {
+            background-color: #3498db;
+            height: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+            
+            .left-column, .right-column {
+                flex: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3" alt="Foto Profil" class="profile-img">
+            <h1>Floris Edelweis</h1>
+            <h2>Mahasiswa Sistem Informasi | Universitas Trunojoyo Madura</h2>
+        </div>
+        
+        <div class="main-content">
+            <div class="left-column">
+                <div class="section">
+                    <h2 class="section-title">Informasi Kontak</h2>
+                    <div class="contact-item">
+                        📱
+                        <span>+62 813 3595 9586</span>
+                    </div>
+                    <div class="contact-item">
+                        ✉️
+                        <span>florisedelweis@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        🏠
+                        <span>Jl. Gajah Mada Gg. Perumahan I No. 01, Bojonegoro, Jawa Timur</span>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Keahlian</h2>
+                    <div class="skill-item">
+                        <span class="skill-name">HTML/CSS</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">MySQL</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Desain UI/UX</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Bahasa</h2>
+                    <div class="skill-item">
+                        <span class="skill-name">Bahasa Indonesia</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Bahasa Inggris</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right-column">
+                <div class="section">
+                    <h2 class="section-title">Data Pribadi</h2>
+                    <div class="item">
+                        <span class="item-title">Nama Lengkap:</span> Floris Edelweis Reray
+                    </div>
+                    <div class="item">
+                        <span class="item-title">Tanggal Lahir:</span> 30 Mei 2004
+                    </div>
+                    <div class="item">
+                        <span class="item-title">Tempat Lahir:</span> Bojonegoro
+                    </div>
+                    <div class="item">
+                        <span class="item-title">Kewarganegaraan:</span> Indonesia
+                    </div>
+                    <div class="item">
+                        <span class="item-title">Agama:</span> Islam
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Pendidikan</h2>
+                    <div class="item">
+                        <span class="item-title">2022 - Sekarang</span>
+                        <strong>Universitas Trunojoyo Madura</strong>
+                        <p>Sarjana 1 Sistem Informasi</p>
+                        <p>IPK: 3,66/4,00</p>
+                    </div>
+                    <div class="item">
+                        <span class="item-title">2019 - 2022</span>
+                        <strong>SMA Negeri 3 Bojonegoro</strong>
+                        <p>Jurusan IPA</p>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Pengalaman</h2>
+                    <div class="item">
+                        <span class="item-title">Januari 2025 - Februari 2025</span>
+                        <strong>Magang Entri Data</strong>
+                        <p>Bapenda Bojonegoro</p>
+                        <p>Membantu dalam pengelolaan dan pemeliharaan data pada website Sistem Informasi Pemerintahan Daerah Republik Indonesia, dengan fokus pada entri dan validasi data untuk mendukung operasional pemerintahan daerah.</p>
+                    </div>
+                    <div class="item">
+                        <span class="item-title">Januari 2023 - Desember 2023</span>
+                        <strong>Anggota Divisi Kewirausahaan</strong>
+                        <p>Himpunan Mahasiswa Sistem Informasi</p>
+                        <p>Merancang dan menjalankan program kewirausahaan untuk meningkatkan pemasukan himpunan. Mengelola strategi pemasaran, inovasi produk, serta kemitraan dengan pihak eksternal dalam kegiatan bisnis dan fundraising.</p>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Proyek</h2>
+                    <div class="item">
+                        <strong>Website Rental Mobil</strong>
+                        <p>Membuat website rental mobil dengan fitur pemesanan mobil dan sistem pembayaran online.</p>
+                    </div>
+                    <div class="item">
+                        <strong>Aplikasi Mobile Wisata Madura</strong>
+                        <p>Membuat aplikasi mobile wisata Madura untuk membantu wisatawan menemukan destinasi wisata, rute perjalanan, serta rating dan informasi lainya terkait wisata tersebut. </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
