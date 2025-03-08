@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaji</title>
+    <style>
+    body{
+        background-color: gray;
+    }
+    .container{
+    padding: 10px;
+    background-color: rgb(97, 95, 95);
+    float: right;
+    margin-right: 100px;
+    margin-top: 100px;
+    width: 500px;
+    height: 400px;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    }
+    img {
+        height: 550px;
+        width: 350px;
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+    form{
+    padding: 10px;
+    text-align: center;
+    }
+    input{
+        background-color: white;
+        border: none;
+        padding: 12px;
+        margin-bottom: 10px;
+        width: 180px;
+        outline: none;
+        border-radius: 20px;
+        text-align: center;
+    }
+    table{
+        width: 500px;
+        text-align: center;
+        font-size: 20px
+    }
+    </style>
+</head>
+<body>
+    <img src="tugas1.png">
+        <h1>GAJI KARYAWAAN</h1>
+        <form action="tugas1.php" method="post">
+            <table>
+                <tr>
+                    <td>Nama Karyawan</td>
+                    <td>: <input type="text" name="nama"></td>
+                </tr>
+                <tr>
+                    <td>Jabatan Karyawan</td>
+                    <td>: <input type="text"  name="jabatan"></td>
+                </tr>
+                <tr>
+                    <td>Gaji Pokok</td>
+                    <td>: <input type="number" id="gaji" name="gaji"></td>
+                </tr>
+                <tr>
+                    <td>Tunjangan</td>
+                    <td>: <input type="number" id="tunjangan" name="tunjangan"></td>
+                </tr>
+                <tr>
+                    <td>Potongan</td>
+                    <td>: <input type="number" id="potongan" name="potongan"></td>
+                </tr>
+            </table><br>
+        <button style="text-align: center;">Hitung</button> 
+        </form>
+    </div>
+</body>
